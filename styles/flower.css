@@ -17,7 +17,7 @@ body{
 
 img{
     width: 100%;
-    
+
 }
 
 /* shared style */
@@ -138,7 +138,6 @@ img{
 }
 
 .card{
-    /* max-width: 270px; */
     text-align: center;
 }
 
@@ -189,10 +188,6 @@ img{
     height: 250px;
     position: absolute;
     transform: translate(-60%, -40%);
-
-    /* margin-left: -160px ;
-    margin-top: -120px; */
-   
 }
 
 .lover-content{
@@ -228,7 +223,6 @@ img{
     margin-top: 120px;
     display: grid;
     grid-template-columns: 2fr 4fr;
-    /* grid-template-rows: 1fr 1fr; */
     gap: 30px;
     color: white;
 }
@@ -248,7 +242,6 @@ img{
 }
 
 .left-top{
-    /* color: white; */
     grid-column: 1/2;
     height: 170px;
     background-image: url("../assets/deal-bloom.png");
@@ -319,6 +312,43 @@ img{
     margin-top: 24px;
 }
 
+/* footer section style */
+.footer{
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content{
+    width: 359px;
+    padding-bottom: 60px;
+}
+.footer-des{
+    margin-top: 16px;
+}
+
+.footer-links ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none;
+    row-gap: 32px;
+    column-gap: 50px;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: #00000080;
+}
+
+.footer-media{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(-40%);
+}
+
+
+
 
 
 /* mobile responsive */
@@ -339,7 +369,8 @@ img{
     .hero-content,
     .plants, 
     .lover,
-    .deal{
+    .deal,
+    .footer{
     padding:20px;
     }
 
@@ -394,5 +425,17 @@ img{
     .join form button{
         width: 100px;
         margin-top: 16px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer-links ul{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-media{
+        margin-top: 50px;
     }
 }
