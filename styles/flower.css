@@ -11,7 +11,9 @@
     font-family: "Inter", sans-serif;
 }
 
-
+body{
+    background-color: #F5F8FF;
+}
 
 /* shared style */
 
@@ -30,6 +32,18 @@
 
 .orange{
     color: #E95A08;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+}
+
+.p-text{
+    color: #00000080;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 /* navbar style */
@@ -90,16 +104,63 @@
     font-weight: 700;
     font-size: 4rem;
 }
-.hero-des{
-    color: #00000080;
-    font-size: 1.25rem;
-}
+
 .hero-image img{
     width: 100%;
     display: block;
     flex: 1;
 }
 
+/* plants section style */
+
+.plants{
+    margin-top: 120px;
+}
+
+.plants-content{
+    text-align: center;
+}
+.plants-des{
+    margin-top: 16px;
+}
+
+.plants-card-container{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.card{
+    /* max-width: 270px; */
+    text-align: center;
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+.flower-name{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.flower-price{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 20px 0 30px 0;
+}
+
+.card-btn{
+    width: 100%;
+    background-color: #E95A08;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 12px 0px;
+    border: none;
+    font-size: 1rem;
+}
 
 
 
@@ -120,7 +181,8 @@
         gap: 28px;
     }
 
-    .hero-content{
+    .hero-content,
+    .plants {
         padding: 20px;
     }
 
@@ -130,5 +192,14 @@
     .hero-image{
         width: 100%;
         display: inline-block;
+    }
+
+    .plants-card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .plants-card-container .card:nth-child(7) ,
+    .plants-card-container .card:nth-child(8){
+        display: none;
     }
 }
