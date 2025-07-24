@@ -15,6 +15,11 @@ body{
     background-color: #F5F8FF;
 }
 
+img{
+    width: 100%;
+    
+}
+
 /* shared style */
 
 .container{
@@ -183,8 +188,10 @@ body{
     width: 250px;
     height: 250px;
     position: absolute;
-    margin-left: -160px ;
-    margin-top: -120px;
+    transform: translate(-60%, -40%);
+
+    /* margin-left: -160px ;
+    margin-top: -120px; */
    
 }
 
@@ -221,7 +228,7 @@ body{
     margin-top: 120px;
     display: grid;
     grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     gap: 30px;
     color: white;
 }
@@ -276,6 +283,41 @@ body{
 }
 
 
+/* join section style */
+
+.join{
+    margin-top: 120px;
+    background-image: url("../assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 199px 0;
+}
+
+.join-title{
+    color: white;
+}
+
+.join form input{
+    max-width: 644px;
+    width: 100%;
+    background-color: white;
+    padding: 16px; 
+    border: none;
+}
+
+.join form button{
+     background-color: #E95A08;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    max-width: 186px;
+    width: 100%;
+    font-size: 1rem;
+    transform: translate(-4px);
+    margin-top: 24px;
+}
 
 
 
@@ -298,13 +340,13 @@ body{
     .plants, 
     .lover,
     .deal{
-        padding: 20px;
+    padding:20px;
     }
 
     .hero-title{
         font-size: 2.5rem;
     }
-    .hero-image{
+    .hero-image img{
         width: 100%;
         display: inline-block;
     }
@@ -337,5 +379,20 @@ body{
     }
     .right-collage-title{
         font-size: 1.25rem;
+    }
+    
+    .join{
+        padding: 60px 0;
+    }
+    .join-title{
+        font-size:1.5rem ;
+    }
+
+    .join form input{
+        width: 218px;
+    }
+    .join form button{
+        width: 100px;
+        margin-top: 16px;
     }
 }
