@@ -326,6 +326,11 @@ img {
   max-width: 359px;
   padding-bottom: 60px;
 }
+
+.footer-content img{
+    width: 135px;
+}
+
 .footer-des {
   margin-top: 16px;
 }
