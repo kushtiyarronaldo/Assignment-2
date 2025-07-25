@@ -401,6 +401,7 @@ img {
 
   .lover {
     flex-direction: column;
+    margin-top: 120px;
   }
 
   .lover-badge {
